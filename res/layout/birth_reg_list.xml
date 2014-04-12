@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bg_footer"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnNewBirth"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_default_normal_green"
+            android:drawableLeft="@drawable/plus_symbol"
+            android:gravity="left|center"
+            android:text="New birth"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnModBirth"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="50"
+            android:background="@drawable/btn_default_normal_brown"
+            android:drawableLeft="@drawable/save_24"
+            android:gravity="left|center"
+            android:text=" Edit"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/buttons"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvHead"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/clrPink"
+            android:gravity="center_horizontal"
+            android:text="@string/binfo" />
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="0.17"
+            android:background="@color/clrOffwhite"
+            android:choiceMode="singleChoice"
+            android:divider="#b5b5b5"
+            android:dividerHeight="1dp"
+            android:fillViewport="true"
+            android:listSelector="@drawable/list_selector" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/txtCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="." />
+    </LinearLayout>
+
+</RelativeLayout>

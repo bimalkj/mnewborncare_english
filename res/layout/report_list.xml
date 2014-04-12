@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/clrOffwhite"
+        android:orientation="vertical"
+        app:context=".Workflow" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/clrPink"
+            android:gravity="center_horizontal"
+            android:text="Report" />
+
+        <Button
+            android:id="@+id/btnHVList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/custom_button_lblue"
+            android:text="1. Home visit list"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/btnDList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_button_lblue"
+            android:text="2. Death list"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/btnAbortRep"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_button_lblue"
+            android:text="3. Abortion"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

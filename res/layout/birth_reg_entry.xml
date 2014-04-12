@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/clrOffwhite"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvHead"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/clrPink"
+                android:gravity="center_horizontal"
+                android:text="@string/binfo" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/slno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/btn_default_normal_blue"
+                    android:gravity="right"
+                    android:text="12"
+                    android:textColor="@color/clrWhite"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tvlblMname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="3dp"
+                            android:text="Mother&apos;s Name"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tvMname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/clrWhite"
+                            android:text="--"
+                            android:textColor="@color/helpColor" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvDob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="Date of birth"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <DatePicker
+                android:id="@+id/dtpDob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" >
+				<RadioGroup
+                    android:id="@+id/rgPob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                	<RadioButton
+                	    android:id="@+id/rbLive"
+                	    android:layout_weight=".3"
+                	    android:checked="true"
+                	    android:text="Birth" />
+
+				    	<RadioButton
+				    	    android:id="@+id/rbAbort"
+				    	    android:layout_weight=".3"
+				    	    android:text="Abortion" />
+
+                	<RadioButton
+                	    android:id="@+id/rbStillBirth"
+                	    android:layout_weight=".3"
+                	    android:text="Still birth" />
+
+				</RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPob"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvPob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".7"
+                    android:text="Place of birth"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/rgPob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rbHome"
+                        android:layout_height="35dp"
+                        android:layout_weight=".35"
+                        android:checked="false"
+                        android:text="Home" />
+
+                    <RadioButton
+                        android:id="@+id/rbHosp"
+                        android:layout_height="35dp"
+                        android:layout_weight=".35"
+                        android:text="Instituition" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llGender"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".7"
+                    android:text="Sex"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/rgGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rbBoy"
+                        android:layout_height="35dp"
+                        android:layout_weight=".15"
+                        android:checked="false"
+                        android:text="Boy" />
+
+                    <RadioButton
+                        android:id="@+id/rbGirl"
+                        android:layout_height="35dp"
+                        android:layout_weight=".35"
+                        android:text="Girl" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llWeight"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:focusableInTouchMode="true"
+                    android:text="Weight"
+                    android:textSize="18sp" />
+
+                <org.intrahealth.mnewborncareeng.control.NumberPicker
+                    android:id="@+id/npWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" >
+                </org.intrahealth.mnewborncareeng.control.NumberPicker>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bg_footer"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnSaveBirth"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/btn_default_normal_green"
+            android:drawableLeft="@drawable/save_24"
+            android:gravity="left|center"
+            android:text=" Save"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+    <color name="backColor">#F00</color>
+    <color name="helpColor">#00F</color>
+    <color name="backColor1">#000</color>
+    <color name="clrWhite">#FFF</color>
+    <color name="clrGreen">#92D050</color>
+    <color name="clrOrange">#E26B0A</color>
+    <color name="clrPink">#FF66FF</color>
+    <color name="clrOffwhite">#DDD</color>
+    <color name="clrFooter">#CCC</color>
+    <color name="clrDeepGreen">#0F0</color>
+    <color name="clrYellow">#FF8</color>
+    <color name="clrRed">#F55</color>
+    <color name="clrMGreen">#669900</color>
+    
+   <style name="Theme.Dialog.Alert" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--item name="android:windowTitleStyle">@android:style/DialogWindowTitle</item-->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+   <style name="Widget">
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+    </style>
+
+</resources>

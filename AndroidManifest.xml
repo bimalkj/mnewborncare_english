@@ -1,0 +1,80 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.intrahealth.mnewborncareeng"
+    android:versionCode="15"
+    android:versionName="1.0.15" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="10" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+	<uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+		<uses-permission android:name="android.permission.SEND_SMS"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:icon="@drawable/msakhi_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="org.intrahealth.mnewborncareeng.MainActivity"
+            android:label="@string/app_name" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+        android:name="Workflow"
+        android:label="Main workflow" android:screenOrientation="portrait">
+		</activity>
+        <activity android:name="EditPreference" android:screenOrientation="portrait"></activity>
+        <activity android:name="Preg_reg_list" android:screenOrientation="portrait"></activity>
+        <activity android:name="preg_entry"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="Birth_reg_list" android:screenOrientation="portrait"></activity>
+        <activity android:name="Birth_reg_entry"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="Home_visits_list" android:screenOrientation="portrait"></activity>
+        <activity android:name="Quest" android:screenOrientation="portrait"></activity>
+        <activity android:name="Remedy" android:screenOrientation="portrait"></activity>
+        <activity android:name="Visit_summary" android:screenOrientation="portrait"></activity>
+       <service android:name="org.intrahealth.mnewborncareeng.SmsService" />
+       <activity android:name="DReport_entry"></activity>
+       <activity android:name="Immun_entry"></activity>
+       <activity android:name="Report_list"></activity>
+       <activity android:name="Report"></activity>
+       <activity android:name="Reporthv"></activity>
+       // Send Receiver
+        <receiver android:name="org.intrahealth.mnewborncareeng.SendBroadcastReceiver">
+            <intent-filter>
+                <action android:name="SMS_SENT" />
+            </intent-filter>
+        </receiver>
+        //Delivery Receiver
+        <receiver android:name="org.intrahealth.mnewborncareeng.DeliveryBroadcastReceiver">
+            <intent-filter>
+                <action android:name="SMS_DELIVERED" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="Counc_sel"></activity>
+        <activity android:name="Counc_modlist"></activity>
+        <activity android:name="Counc_msglist"></activity>
+        <activity android:name="Counc_info"></activity>
+        <activity android:name="Aboutus"></activity>
+        <activity android:name="AVisit_summary"></activity>
+        <activity android:name="QuestANC"></activity>
+        <activity android:name="Anc_visit_list"></activity>
+    </application>
+
+</manifest>

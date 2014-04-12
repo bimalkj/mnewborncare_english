@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <EditTextPreference android:title="User Password" android:summary="Password for User" android:defaultValue="0000" android:key="user_password"/>
+    <EditTextPreference android:title="Admin Password" android:summary="Password for admin" android:defaultValue="123456" android:key="adm_password"/>
+    <EditTextPreference android:key="id" android:title="ASHA/ANM ID" android:defaultValue="1"/>
+    <EditTextPreference android:key="server_url" android:title="URL for Application server" android:defaultValue="localhost"/>
+    <EditTextPreference android:key="user_name" android:title="Name of ASHA/ANM" android:defaultValue="---"/>
+    <CheckBoxPreference android:key="send_sms" android:title="SMS sync" android:defaultValue="false"/>    
+
+</PreferenceScreen>
